@@ -1,7 +1,7 @@
-import Profile from "./Profile";
-import StatisticsList from "./Statistics-list";
-import FriendList from "./FriendList";
-import TransactionHistory from "./TransactionHistory"
+import Profile from "./Profile/Profile";
+import StatisticsList from "./Statistics/Statistics-list";
+import FriendList from "./Friends/FriendList";
+import TransactionHistory from "./Transactions/TransactionHistory"
 import user from "../data/user.json";
 import data from "../data/data.json";
 import friends from "../data/friends.json";
@@ -11,10 +11,13 @@ export const App = () => {
   return (
     <div
       style={{
+    
+        textAlign: 'center',
         height: '100vh',
         display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
+        flexDirection: 'column',
+        // justifyContent: 'center',
+        // alignItems: 'center',
         fontSize: 40,
         color: '#010101'
       }}
