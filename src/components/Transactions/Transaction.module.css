@@ -1,0 +1,17 @@
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}.head{
+    background-color: aqua;
+height: 100px;
+    color: aliceblue;
+}
+.line{
+    text-transform: capitalize;
+    height: 100px;
+
+}
+.line:nth-child(even){
+    background-color: rgb(197, 195, 195);
+}

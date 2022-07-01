@@ -1,6 +1,4 @@
-/* .statistics{
-   background-color:tomato;
-} */
+
 .statList{ display:flex;
     width: 80%;
     margin-left: auto;
@@ -11,7 +9,7 @@
     /* width: 80px; */
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+  width: 200px;
     padding:20px;
 }
 .label{
@@ -22,6 +20,4 @@
 .statistics{
     background-color:tomato;
 }
-/* # .title{
-#     color: olive;
-# } */
+
