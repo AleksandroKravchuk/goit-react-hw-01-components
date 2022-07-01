@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
+import css from './Friends.module.css';
 const FriendListItem = ({ avatar, name, isOnline }) => {
  
     return <Fragment>
-        {isOnline? <span class="green"></span>:<span class="red"></span>}
-         <img class="avatar" src={avatar} alt="User avatar" width="48" />
-        <p class="name">{name}</p>
+        {isOnline? <span className={css.green}></span>:<span className={css.red}></span>}
+         <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+        <p className={css.name}>{name}</p>
   </Fragment>
    
     

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Fragment } from 'react';
-import css from './Statistics'
+import css from './Statistics.module.css'
 const Statistics = ({ label, percentage }) => {
 
     return <Fragment>
