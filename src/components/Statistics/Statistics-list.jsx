@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Statistics from "./Statistics";
 import css from './Statistics.module.css'
-import getRandomHexColor from '../../components/color.js'
+import getRandomHexColor from '../helpers/color.js'
 
 const StatisticsList = ({title, stats}) => {
     return <section className={css.statistics}>

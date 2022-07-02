@@ -3,10 +3,10 @@ import { Fragment } from 'react';
 import css from './Statistics.module.css'
 const Statistics = ({ label, percentage }) => {
 
-    return <Fragment>
+    return <>
         <span className={css.label}>{label}</span>
         <span className={css.percentage}>{percentage}%</span>
-  </Fragment>
+  </>
    
     
 }

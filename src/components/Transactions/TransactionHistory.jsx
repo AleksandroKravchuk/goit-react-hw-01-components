@@ -1,14 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Transaction.module.css';
-// const TransactionItem =({type,amount,currency})  => {
-//         return <Fragment>
-//             <td>{type}</td>
-//             <td>{amount}</td>
-//             <td>{currency}</td>
-//     </Fragment>
-//     }
-    
-  
+
 const TransactionHistory = ({ items }) => {
     return  <table className={css.table}>
   <thead >
@@ -19,16 +11,11 @@ const TransactionHistory = ({ items }) => {
     </tr>
   </thead>
         <tbody>
-            {items.map(item =>
-                <tr className={css.line} key={item.id}>
-                    <td>{item.type}</td>
-                    <td>{item.amount}</td>
-                    <td>{item.currency}</td>
-            {/* <TransactionItem
-                type={item.type}
-                amount={item.amount}
-                currency={item.currency}
-                /> */}
+            {items.map(({id,type,amount,currency}) =>
+            <tr className={css.line} key={id}>
+                    <td>{type}</td>
+                    <td>{amount}</td>
+                    <td>{currency}</td>
             </tr> )} 
   </tbody>
 </table>

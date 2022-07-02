@@ -16,22 +16,21 @@ export const App = () => {
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        // justifyContent: 'center',
-        // alignItems: 'center',
         fontSize: 40,
         color: '#010101'
       }}
     >
     
-        < Profile     
+  < Profile     
   username={user.username}
   tag={user.tag}
   location={user.location}
   avatar={user.avatar}
-  followers={user.stats.followers}
-  views={user.stats.views}
-  likes={user.stats.likes}
-      />
+  stats={user.stats}
+  // followers={user.stats.followers}
+  // views={user.stats.views}
+  // likes={user.stats.likes}
+  />
   <StatisticsList title="Upload stats" stats={data} />
   <FriendList friends={friends} />
   <TransactionHistory items={transactions} /> 
